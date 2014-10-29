@@ -5,3 +5,10 @@ class Place
 		@name=name
 	end
 end
+
+class PlaceList
+	def add(place)
+		@places ||= []
+    @places << place
+  end
+end
